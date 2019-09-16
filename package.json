@@ -1,0 +1,58 @@
+{
+  "name": "spectroplot",
+  "version": "1.0.2",
+  "description": "I/Q Spectrogram Plot JS library",
+  "keywords": [
+    "spectrogram",
+    "canvas",
+    "plot",
+    "sdr"
+  ],
+  "homepage": "https://github.com/triq-org/spectroplot-js#readme",
+  "bugs": "https://github.com/triq-org/spectroplot-js/issues",
+  "license": "GPL-2.0-or-later",
+  "author": "Christian W. Zuckschwerdt <zany@triq.net>",
+  "repository": "github:triq-org/spectroplot-js",
+  "main": "index.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "scripts": {
+    "watch": "webpack --watch",
+    "serve": "webpack serve --content-base ./lib",
+    "build": "webpack",
+    "lint": "eslint src --ext .js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.16.0",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "rules": {}
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
