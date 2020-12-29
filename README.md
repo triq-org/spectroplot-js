@@ -97,75 +97,13 @@ startWorker(SpectroplotWorker) // no need to pass a worker option to `new Spectr
 ## Using the API
 
 There is a simple API which manages a drop zone and creates spectrograms from a template,
-see [`example.html`](lib/example.html) for this `initCloning(elementOrSelector)` API.
+see [`example.html`](lib/example.html) for this `new EasyCloning(elementOrSelector)` API.
 
-For more control you can construct each `Spectroplot(options)` as needed with these options:
+For more control construct each `new Spectroplot(options)` as needed with custom options.
+Then on the instance use `setOption(opt, value)`, `setOptions(opts)`, and `setData(filedata)`.
 See [`iqspectrovue`](https://github.com/triq-org/iqspectrovue) for a full featured example using VueJS.
 
-### Options on Spectroplot
-
-|        Name        |        Type         |      Default       | Description                       |
-| :----------------: | :-----------------: | :----------------: | :-------------------------------- |
-| **`n`**            | `{Number}`          | `512`              | powers of 2 only                  |
-| **`width`**        | `{Number}`          | `3000`             | in px                             |
-| **`height`**       | `{Number}`          | `512`              | in px, 0 = auto                   |
-| **`zoom`**         | `{Number}`          | `1`                | Zoom factor                       |
-| **`windowf`**      | `{String\|Object}`  | `'blackmanHarris'` | Window name or custom function    |
-| **`gain`**         | `{Number}`          | `6`                | Gain in dB                        |
-| **`range`**        | `{Number}`          | `30`               | Range in dB                       |
-| **`cmap`**         | `{String\|Object}`  | `'cube1'`          | Color map name or custom map      |
-| **`ampHeight`**    | `{Number}`          | `0`                | Amp bar height in px, 0 = off     |
-| **`minmaxHeight`** | `{Number}`          | `20`               | MinMax bar height in px, 0 = off  |
-| **`channelMode`**  | `{String\|Boolean}` | `false`            | `'I/Q'` (false) or `'L/R'` (true) |
-| **`dbfsWidth`**    | `{Number}`          | `60`               |                                   |
-| **`dbfsHeight`**   | `{Number}`          | `0`                | 0 = auto: height + timeHeight     |
-| **`freqWidth`**    | `{Number}`          | `40`               |                                   |
-| **`timeHeight`**   | `{Number}`          | `20`               |                                   |
-| **`rampHeight`**   | `{Number}`          | `0`                | 0 = auto                          |
-| **`rampTop`**      | `{Number}`          | `10`               |                                   |
-| **`rampWidth`**    | `{Number}`          | `15`               |                                   |
-| **`histWidth`**    | `{Number}`          | `100`              |                                   |
-| **`histLeft`**     | `{Number}`          | `55`               |                                   |
-| **`parent`**       | `{String\|Object}`  |                    | Container element or selector     |
-| **`renderInfo`**   | `{String\|Object}`  |                    | Info element or selector          |
-| **`theme`**        | `{String\|Object}`  |                    | Theme name or options             |
-
-### Predefined Window functions:
-
-- `'rectangular'` : Rectangular window function
-- `'bartlett'` : Bartlett window function
-- `'hamming'` : Hamming window function
-- `'hann'` : Hann window function
-- `'blackman'` : Blackman window function
-- `'blackmanHarris'` : Blackman-Harris window function
-
-### Predefined Color maps:
-
-- `'cube1'` : Cube1 color map
-- `'viridis'` : Viridis color map
-- `'plasma'` : Plasma color map
-- `'inferno'` : Inferno color map
-- `'magma'` : Magma color map
-- `'hot'` : Hot color map
-- `'afmhot'` : Afmhot color map
-- `'gist_heat'` : Gist heat color map
-- `'naive'` : Naive color map
-- `'parabola'` : Parabola color map
-- `'sox'` : Sox color map
-- `'grayscale'` : Gray color map
-- `'roentgen'` : Röntgen color map
-- `'phosphor'` : Phosphor color map
-
-### API functions on Spectroplot instance
-
-- `enableGuides()`
-- `disableGuides()`
-- `enableButtons()`
-- `setTheme(nameOrOptions)`
-- `destroy()`
-- `setOption(opt, value)`
-- `setOptions(opts)`
-- `setData(filedata)`
+The full API is detailed in [`API.md`](API.md)
 
 ## Copyright and Licence
 

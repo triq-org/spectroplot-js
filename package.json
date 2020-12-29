@@ -1,6 +1,6 @@
 {
   "name": "spectroplot",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "I/Q Spectrogram Plot JS library",
   "keywords": [
     "spectrogram",

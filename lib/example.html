@@ -26,6 +26,13 @@
         <option value="256">N=256</option>
         <option value="128">N=128</option>
       </select>
+      <select name="height" class="height" required>
+        <option value="0">Auto</option>
+        <option value="1024">1024px</option>
+        <option value="512" selected>512px</option>
+        <option value="256">256px</option>
+        <option value="128">128px</option>
+      </select>
       <select name="windowF" class="windowF" required>
         <option value="rectangular">Rectangular</option>
         <option value="bartlett">Bartlett</option>
@@ -52,6 +59,13 @@
         <option value="24">+24 dB</option>
         <option value="27">+27 dB</option>
         <option value="30">+30 dB</option>
+        <option value="36">+36 dB</option>
+        <option value="42">+42 dB</option>
+        <option value="48">+48 dB</option>
+        <option value="54">+54 dB</option>
+        <option value="60">+60 dB</option>
+        <option value="72">+72 dB</option>
+        <option value="90">+90 dB</option>
       </select>
       <select name="range" class="range" required>
         <option value="6">+6 dB</option>
@@ -64,7 +78,9 @@
         <option value="48">+48 dB</option>
         <option value="54">+54 dB</option>
         <option value="60">+60 dB</option>
+        <option value="72">+72 dB</option>
         <option value="90">+90 dB</option>
+        <option value="120">+120 dB</option>
       </select>
       <select name="cmap" class="cmap" required>
         <option value="cube1">Cube1</option>
@@ -97,6 +113,10 @@
       <select name="channelMode" class="channelMode" required>
         <option value="I/Q">I/Q SDR data</option>
         <option value="L/R">L/R stereo audio</option>
+      </select>
+      <select name="theme" class="theme" required>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
       </select>
       <span class="fileinfo"></span>
     </div>
@@ -142,5 +162,5 @@
 
 <script src="spectroplot.js"></script>
 <script>
-  initCloning('#spectros')
+  new EasyCloning('#spectros', document.location.hash.substring(1))
 </script>
