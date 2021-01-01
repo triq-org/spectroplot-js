@@ -37,7 +37,8 @@ div#dropZone {
   background: #608;
 }
 
-.control select {
+.control select,
+.control button {
   margin-left: 1em;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -46,6 +47,16 @@ div#dropZone {
   padding: .5em .25em;
   color: #fff;
   background-color: #92b;
+}
+
+.control .group {
+  display: flex;
+  margin-left: 1em;
+}
+.control button {
+  min-width: 2em;
+  margin-left: 1px;
+  border: 1px solid #92b;
 }
 
 .fileinfo {
