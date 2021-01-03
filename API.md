@@ -60,7 +60,7 @@ Initialize a new Spectroplot.
 | --- | --- | --- | --- |
 | options | <code>Object</code> |  |  |
 | [options.fftN] | <code>number</code> | <code>512</code> | FFT width, powers of 2 only |
-| [options.width] | <code>number</code> | <code>3000</code> | cavnas width in px |
+| [options.width] | <code>number</code> | <code>3000</code> | canvas width in px |
 | [options.height] | <code>number</code> | <code>512</code> | canvas height in px, 0 = auto |
 | [options.zoom] | <code>number</code> | <code>1</code> | Zoom factor |
 | [options.windowF] | [<code>WindowF</code>](#WindowF) \| [<code>CustomWindowF</code>](#CustomWindowF) | <code>blackmanHarris</code> | Window name or custom function |
@@ -121,6 +121,7 @@ Set a color theme.
 | [options.freqLabelFill] | <code>string</code> | <code>&quot;#333&quot;</code> | Freq label text color |
 | [options.freqMinorFill] | <code>string</code> | <code>&quot;#CCC&quot;</code> | Freq minor tick color |
 | [options.freqMajorFill] | <code>string</code> | <code>&quot;#666&quot;</code> | Freq major tick color |
+| [options.freqMarkeFill] | <code>string</code> | <code>&quot;#F00&quot;</code> | Freq marker tick color |
 | [options.timeLabelFill] | <code>string</code> | <code>&quot;#333&quot;</code> | Time label text color |
 | [options.timeMinorFill] | <code>string</code> | <code>&quot;#CCC&quot;</code> | Time minor tick color |
 | [options.timeMajorFill] | <code>string</code> | <code>&quot;#666&quot;</code> | Time major tick color |
