@@ -69,7 +69,7 @@ import { Spectroplot } from 'spectroplot'
 
 With Webpack 5 use something like:
 ```js
-const SpectroplotWorker = Worker(new URL('spectroplot/lib/worker.js', import.meta.url))
+const SpectroplotWorker = new Worker(new URL('spectroplot/lib/worker.js', import.meta.url))
 import { Spectroplot } from 'spectroplot'
 ```
 
