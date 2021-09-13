@@ -22,9 +22,11 @@
     "watch": "webpack --watch",
     "serve": "webpack serve --content-base ./lib",
     "build": "webpack",
-    "lint": "eslint src --ext .js"
+    "lint": "eslint lib --ext .js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jsfive": "^0.2.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",

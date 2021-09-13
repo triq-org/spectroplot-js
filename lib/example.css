@@ -59,6 +59,22 @@ div#dropZone {
   border: 1px solid #92b;
 }
 
+.control .spinner {
+  margin-left: 1em;
+  padding: 0 .5em;
+  color: #fff;
+  background-color: #92b;
+  font-size: .7em;
+}
+.control .spinner input {
+  width: 2em;
+  padding: .5em 0;
+  border: none;
+  color: #fff;
+  background-color: #92b;
+  -moz-appearance: textfield;
+}
+
 .fileinfo {
   display: flex;
   flex-wrap: wrap;

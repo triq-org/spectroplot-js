@@ -2837,6 +2837,13 @@ jsesc@~0.5.0:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
   integrity sha1-597mbjXW/Bb3EP6R1c9p9w8IkR0=
 
+jsfive@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/jsfive/-/jsfive-0.2.1.tgz#e0b92362f18256a66de1a4adcf1e4ce2da66de67"
+  integrity sha512-S4qu7imPW1BpD+DsdXrKXnRtsjmjLzVT9DF6fUSs+AIVEzUSHc8SlMQeSZyrhfTPIgecLglUk+RLng2YtXsb8g==
+  dependencies:
+    pako-es "^1.0.9"
+
 json-parse-better-errors@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/json-parse-better-errors/-/json-parse-better-errors-1.0.2.tgz#bb867cfb3450e69107c131d1c514bab3dc8bcaa9"
@@ -3371,6 +3378,11 @@ p-try@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
+
+pako-es@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/pako-es/-/pako-es-1.0.9.tgz#3d55210dbd5fa5bae2b75046219758951dd8d0a7"
+  integrity sha512-oKskC4DDbIKAF8cjx4UPVd6dJcxPqpeo8oelIRKKz72yCA4m9+CQJlEy/CmDcgFvHSvLFxDo/NhI7R9AH4JlMQ==
 
 parent-module@^1.0.0:
   version "1.0.1"

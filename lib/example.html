@@ -46,7 +46,17 @@
         <button name="zoomFit" class="zoomFit">Fit</button>
         <button name="zoomIn" class="zoomIn">+</button>
       </span>
+      <span class="spinner">
+        +<input type="number" class="gain" name="gain" min="0" max="120" value="60">dB
+      </span>
+      <span class="spinner">
+        +<input type="number" class="range" name="range" min="0" max="120" value="60">dB
+      </span>
+      <select name="dynRange" class="dynRange" required>
+        <option value="fixed">Fixed</option>
+        <option value="dynamic">Dynamic</option>
       </select>
+      <!--
       <select name="gain" class="gain" required>
         <option value="0">+0 dB</option>
         <option value="3">+3 dB</option>
@@ -82,6 +92,7 @@
         <option value="90">+90 dB</option>
         <option value="120">+120 dB</option>
       </select>
+      -->
       <select name="cmap" class="cmap" required>
         <option value="cube1">Cube1</option>
         <option value="viridis">Viridis</option>
