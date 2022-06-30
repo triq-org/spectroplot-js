@@ -10,7 +10,9 @@ module.exports = {
   },
   devtool: 'source-map',
   devServer: {
-    contentBase: './dist',
+    static: {
+      directory: path.join(__dirname, 'lib'),
+    },
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
